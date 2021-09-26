@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGIC</title>
+<style>
+
+.container{ width: 700px;
+display: block;
+margin: 0 auto;}
+.footer{ text-align: center;
+color: crimson}
+
+ h1 { margin: 0;
+    padding: 0;
+    text-align: center;
+    color: crimson;
+    font-size: 50px;
+    border: 1px solid crimson}
+
+h2 { color: whitesmoke;
+margin:0;
+padding: 30px;
+text-align: center;
+transition: all 400ms ease-in-out;}
+
+h2:hover{cursor: pointer;
+color: black;}
+
+h3{color: whitesmoke;
+margin:0;
+padding: 30px;
+text-align: center;
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+
+p { color: whitesmoke}
+
+
+body {
+    background-color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+li{
+	margin: 0;
+	padding: 20px 0 20px 50px;
+	list-style: none;
+	background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56d8d066-798d-4b72-a5c6-817f8843569c/d6w1wlv-e40ec58f-8e5e-4ab3-8146-3607d7de624e.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTZkOGQwNjYtNzk4ZC00YjcyLWE1YzYtODE3Zjg4NDM1NjljXC9kNncxd2x2LWU0MGVjNThmLThlNWUtNGFiMy04MTQ2LTM2MDdkN2RlNjI0ZS5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.Kg9okWRcsqLJx0gyd21_1FSVTNWY8ocL0S9I80H1SBg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+   color: whitesmoke
+}
+img { display: block;
+margin:auto;
+border-radius: 10px;}
+
+.learn-more {text-decoration: none}
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+button {color: purple;
+border-radius: 30px;
+padding: 20px 20px 20px 20px;
+box-shadow: purple;
+border: 2px solid purple;
+font-size: 25px;
+transition: all 400ms ease-in-out;
+display: block;
+margin: 0 auto}
+
+button:hover {
+    background-color: purple;
+    color: whitesmoke;
+    cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+<div class="container">
+
+<h1>
+   ♥ ♠ MAGIC ♦ ♣
+</h1>
+<br/>
+
+    <h2>
+Now you see it...
+    </h2>
+
+    <img src="https://cambridgewords.files.wordpress.com/2017/11/magic-wand.jpg"
+    alt="magic want"
+    width= "300">
+
+    <h3> 
+        NOW YOU DON'T
+    </h3>
+    <p> 
+Magic may refer to:
+
+<ul>
+<li>
+Magic (supernatural), beliefs and actions employed to influence supernatural beings and forces
+
+</li>
+<li>
+Magic (illusion), the art of appearing to perform supernatural feats
+
+</li>
+<li>
+Magical thinking, the belief that unrelated events are causally connected despite the absence of any plausible causal
+link between them, particularly as a result of supernatural effects.
+</li>
+<li>
+    Magic (supernatural), beliefs and actions employed to influence supernatural beings and forces
+
+</li>
+</ul>
+
+<a href="https://en.wikipedia.org/wiki/Magic" target="_blank" class="learn-more">
+    Learn more on Wikipedia</a>
+    </p>
+    
+    <button class="learn-button">
+        Learn Magic
+    </button>
+    <br />
+    <p class= "footer">
+        This page was created by Nicole Gainska 🧝‍♂️
+    </p>
+    <br />
+</div>
+<script>
+     function learn() {
+            let name = prompt("What is your name?")
+            alert("Get ready " +name + ", you're about to learn some magic!" );
+            window.open('https://www.hogwartsishere.com/courses/', '_blank');   
+    
+
+        }
+
+    let learnButton= document.querySelector(".learn-button");
+    learnButton.addEventListener("click", learn);
+    
+</script>
+
+
+    </body>
+    </html>
